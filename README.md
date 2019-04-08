@@ -4,9 +4,9 @@ Programming assignment 7 (PA07)
 Now that you have the basics of h, hpp, and cpp file management down, you can implemnent this assignment from scratch and test it from scratch. 
 
 ### You are required to submit 3 files:
-* MyHeap.h - with a templated class named MyHeap
-* my_sort.h - with a templated function called my_sort
-* my_is_sorted.h - with a templated function called my_is_sorted
+* `MyHeap.h` - with a templated class named MyHeap
+* `my_sort.h` - with a templated function called my_sort
+* `my_is_sorted.h` - with a templated function called my_is_sorted
 
 You are not required to have any hpp files, but you can.
 
@@ -58,9 +58,7 @@ The sort functions will be graded for speed (the last 5 points of your grade, wi
 The files listed here are the starting point for your assignment. 
 Only add source files (not compiled files) to the Git repository.
 
-Remember, the assignment due date is posted on the course website:
-https://web.mst.edu/~taylorpat/Courses_files/DataStructures/Content.html
+Remember, the assignment due date is posted on the course website.
 
-Git commands and a Git cheatsheet are posted at the following link, under the heading "Programming Assignments":
-http://web.mst.edu/~taylorpat/Courses_files/DataStructures/Syllabus.html
+Git commands and a Git cheatsheet are posted at the course site, under the heading "Programming Assignments".
 

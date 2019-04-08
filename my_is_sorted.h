@@ -1,0 +1,2 @@
+// Mimic the std:: version
+
