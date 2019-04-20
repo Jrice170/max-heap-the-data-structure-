@@ -206,7 +206,7 @@ class MyHeap
        void push(const T & value_to_push)
        {
               //std::cout<<"before"<<std::endl;
-             if(n>=Maxsize)
+             if(n>=Maxsize || Maxsize <= 0)
              {
                reserve(Maxsize+1);
              }
@@ -221,10 +221,14 @@ class MyHeap
        {
           if(size() > 0)
           {
+              for(int i =0; i< n-1;i ++)
+              {
 
-              Heap[0] = -(200*Heap[0]);
+                Heap[i] = Heap[i+1];
 
-              ///swap(Heap[0],Heap[Maxsize-1]);
+
+              }
+
               n--;
               buildHeap();
 
