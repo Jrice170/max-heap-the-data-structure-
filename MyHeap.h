@@ -67,7 +67,7 @@ class MyHeap
    public:
         MyHeap()
         {
-          Maxsize = 10;
+          Maxsize = 1;
           n = 0;
           Heap  = new T[Maxsize];
         }
