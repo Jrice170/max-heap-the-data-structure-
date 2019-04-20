@@ -24,14 +24,17 @@ class MyHeap
         T temp = a;
         a = b;
         b = temp;
+
      }
 
      void buildHeap()
      {
+         int i,j;
+         T key;
          for(int i = 1; i < Maxsize; i++)
          {
-             T key = Heap[i];
-             int j = i - 1;
+             key = Heap[i];
+             j = i - 1;
              while(j >= 0 && Heap[j] > key)
              {
                  Heap[j+1] = Heap[j];
@@ -205,11 +208,12 @@ class MyHeap
               //std::cout<<"before"<<std::endl;
              if(n>=Maxsize)
              {
-               reserve(Maxsize*2);
+               reserve(Maxsize+1);
              }
              //std::cout<<"after"<<std::endl;
-             Heap[n] = value_to_push;
-             n++;
+
+             Heap[n++] = value_to_push;
+
              buildHeap();
         }
 
@@ -217,9 +221,12 @@ class MyHeap
        {
           if(size() > 0)
           {
-              swap(Heap[0],Heap[n]);
+
+              Heap[0] = -100*Heap[0];
+            //  swap(Heap[0],Maxsize);
               n--;
               buildHeap();
+
           }
           if((size())<(capacity())/(4))
           {
