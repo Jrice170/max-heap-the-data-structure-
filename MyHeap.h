@@ -222,8 +222,9 @@ class MyHeap
           if(size() > 0)
           {
 
-              Heap[0] = -100*Heap[0];
-            //  swap(Heap[0],Maxsize);
+              Heap[0] = -(200*Heap[0]);
+
+              ///swap(Heap[0],Heap[Maxsize-1]);
               n--;
               buildHeap();
 
