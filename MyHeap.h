@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-
+//#include "my_sort.h"
 
 
 template <typename T>
@@ -165,6 +165,7 @@ class MyHeap
               // top element
               return Heap[0];
           }
+
        }
 
 
@@ -176,6 +177,7 @@ class MyHeap
 
               for(int i =0;i<n;i++)
               {
+
                 pointer[i] = Heap[i];
               }
 
@@ -230,7 +232,8 @@ class MyHeap
               }
 
               n--;
-              buildHeap();
+            //  my_sort(Heap,n);
+
 
           }
           if((size())<(capacity())/(4))
