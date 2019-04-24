@@ -1,0 +1,11 @@
+Test Name, Description
+Copy Constructor Test, "Allocate heap and add n values to heap, copy heap, pop from original heap and check to see the top of the original heap and copied heap are not equal, compares sizes ensure they are not equal, pop copy and check each of the remaining values to ensure they are equivalent"
+Default Contructor Test, "Allocate heap, check if empty, check if size equals zero"
+Empty Test,"Allocate heap, check empty, push value onto heap, check !empty"
+My Is Sorted Test, "make a sorted array and check if the array is sorted, create an unsorted array and check if it's sorted, the same process a couple more times"
+Operator Equals Test, "Allocate heap, push n values on the heap, copy original heap, modify original heap and check to see if the copy is modified, do same modification to copy and see if heaps are equivalent, remove all values from both heaps"
+Parameterized Constructor Test, "create an unorganized array with values {1..n} and allocate a heap of the same size as the array, check that the size of the heap is the size of the array, iterate through the heap removing checking the top with the iterator then popping the top."
+Pop Test,"Allocate heap, add values {1..n}, pop(remove) values {1..n} checking top equals iterator."
+Push Test,"Allocate heap, push(add) values {1..n}, pop(remove) values {1..n} checking top equals iterator."
+Size Test, "Allocate heap, check size equals zero, add value check size, cont. same process n times, pop value from heap check size cont. same process n times"
+Top Test, "Allocate heap, add values {1..n}, pop(remove) values {1..n} checking top equals iterator."
